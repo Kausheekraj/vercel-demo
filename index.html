@@ -1,12 +1,229 @@
-<!doctype html>
-<html>
-  <head>
-    <title>Vercel Lab</title>
-  </head>
-  <body>
-    <h1>Hello from Vercel!</h1>
-    <h1>My first automated deployment!.. not really</h1>
-    <p>Vercel kinda sucks.</p>
-    <p>Vercel kinda sucks.</p>
-  </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GT Solve</title>
+
+<style>
+:root{
+    --primary:#0f172a;
+    --secondary:#1e3a8a;
+    --accent:#f97316;
+    --light:#f8fafc;
+    --text:#1f2937;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+body{
+    background:var(--light);
+    color:var(--text);
+    line-height:1.6;
+}
+
+header{
+    background:linear-gradient(135deg,var(--primary),var(--secondary));
+    color:white;
+    padding:60px 20px;
+    text-align:center;
+}
+
+.logo{
+    width:100px;
+    height:100px;
+    object-fit:contain;
+    margin-bottom:15px;
+    background:white;
+    border-radius:12px;
+    padding:10px;
+}
+
+.tagline{
+    color:#dbeafe;
+    font-size:1.2rem;
+    margin-top:10px;
+}
+
+.location{
+    margin-top:12px;
+    color:#e2e8f0;
+}
+
+section{
+    max-width:1100px;
+    margin:auto;
+    padding:50px 20px;
+}
+
+.section-title{
+    text-align:center;
+    color:var(--secondary);
+    margin-bottom:30px;
+    font-size:2rem;
+}
+
+.card{
+    background:white;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.08);
+}
+
+.team-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.member{
+    background:white;
+    padding:20px;
+    border-radius:12px;
+    border-left:5px solid var(--accent);
+    box-shadow:0 3px 12px rgba(0,0,0,0.08);
+}
+
+.member h3{
+    color:var(--primary);
+    margin-bottom:5px;
+}
+
+.member p{
+    color:#555;
+}
+
+footer{
+    background:var(--primary);
+    color:white;
+    text-align:center;
+    padding:25px;
+    margin-top:40px;
+}
+
+.highlight{
+    color:var(--accent);
+    font-weight:bold;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+
+    <!-- Replace logo.png with actual GT Solve logo -->
+    <img src="logo.png" alt="GT Solve Logo" class="logo">
+
+    <h1>GT Solve</h1>
+
+    <p class="tagline">
+        Engineering Future Ready Tech Solutions
+    </p>
+
+    <p class="location">
+        Located at AIC-CIIC, B.S. Abdur Rahman Crescent Institute of Science & Technology,
+        Vandalur, Chennai
+    </p>
+</header>
+
+<section>
+    <h2 class="section-title">About Us</h2>
+
+    <div class="card">
+        <p>
+            <strong>GT Solve</strong> is a technology startup operating from
+            <strong>AIC-CIIC, Crescent College</strong>, focused on delivering
+            innovative engineering and software solutions. We combine expertise
+            in software development, cybersecurity, DevOps, data analytics,
+            and engineering to build future-ready products and platforms.
+        </p>
+    </div>
+</section>
+
+<section>
+    <h2 class="section-title">Software & Technology Team</h2>
+
+    <div class="team-grid">
+
+        <div class="member">
+            <h3>Gowtham</h3>
+            <p>Python Developer & DevOps Engineer</p>
+        </div>
+
+        <div class="member">
+            <h3>Prasanna</h3>
+            <p>Python Developer & Junior Development Lead</p>
+        </div>
+
+        <div class="member">
+            <h3>Sriram</h3>
+            <p>Platform Security Engineer (Pentest & Blue Team)</p>
+        </div>
+
+        <div class="member">
+            <h3>Jackslin</h3>
+            <p>Python Developer</p>
+        </div>
+
+        <div class="member">
+            <h3>Vijayalakshmi</h3>
+            <p>Python Developer</p>
+        </div>
+
+        <div class="member">
+            <h3>Bharathan</h3>
+            <p>Data Analyst</p>
+        </div>
+
+    </div>
+</section>
+
+<section>
+    <h2 class="section-title">Engineering Team</h2>
+
+    <div class="team-grid">
+
+        <div class="member">
+            <h3>Hariharan</h3>
+            <p>
+                <span class="highlight">
+                    Senior Lead Engineer
+                </span>
+                <br>
+                Automotive Strategy & Technical Direction
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<section>
+    <h2 class="section-title">Core Expertise</h2>
+
+    <div class="card">
+        <ul style="padding-left:20px">
+            <li>Python Application Development</li>
+            <li>Automation Solutions</li>
+            <li>DevOps & Platform Engineering</li>
+            <li>Cybersecurity & Platform Protection</li>
+            <li>Data Analytics & Insights</li>
+            <li>Engineering Consulting</li>
+            <li>Automotive Technology Solutions</li>
+        </ul>
+    </div>
+</section>
+
+<footer>
+    <h3>GT Solve</h3>
+    <p>Engineering Future Ready Tech Solutions</p>
+    <p>© 2026 GT Solve. All Rights Reserved.</p>
+</footer>
+
+</body>
 </html>
